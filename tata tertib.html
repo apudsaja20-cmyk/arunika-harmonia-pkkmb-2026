@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata Tertib — PKKMB 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+:root {
+    --bg: #292521;
+    --bg-soft: #312d29;
+    --cream: #f3eee5;
+    --text: #eee7dc;
+    --muted: #bdb4a8;
+    --accent: #b08a63;
+    --line: rgba(243, 238, 229, .16);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1080px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.navbar {
+    height: 78px;
+    background: var(--cream);
+    color: #292521;
+    border-bottom: 1px solid rgba(41, 37, 33, .08);
+    display: flex;
+    align-items: center;
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #8d623d;
+}
+
+.logo span {
+    color: #292521;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    font-size: 12px;
+}
+
+.nav-links a {
+    transition: color .25s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    padding: 110px 0 65px;
+    text-align: center;
+}
+
+.label {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 6vw, 78px);
+    line-height: .98;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+h1 em {
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 600;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 30px;
+    padding: 11px 20px;
+    border: 1px solid var(--line);
+    color: var(--text);
+    font-size: 12px;
+    transition: .25s ease;
+}
+
+.back-button:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.content {
+    padding: 15px 0 100px;
+}
+
+.intro-box {
+    border: 1px solid var(--line);
+    padding: 35px 40px;
+    margin-bottom: 25px;
+    background: rgba(255,255,255,.015);
+}
+
+.intro-box h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.intro-box p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.list {
+    border: 1px solid var(--line);
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 25px;
+    padding: 28px 32px;
+    border-bottom: 1px solid var(--line);
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.number {
+    color: var(--accent);
+    font-family: Georgia, serif;
+    font-size: 25px;
+}
+
+.item h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.item p,
+.item li {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.item ul {
+    padding-left: 20px;
+}
+
+.item li {
+    margin: 7px 0;
+}
+
+.warning {
+    margin-top: 25px;
+    border-left: 2px solid var(--accent);
+    padding: 20px 25px;
+    background: rgba(176, 138, 99, .07);
+}
+
+.warning strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--accent);
+}
+
+.warning p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.footer {
+    border-top: 1px solid var(--line);
+    padding: 30px 0;
+    text-align: center;
+    color: #91897f;
+    font-size: 11px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .nav-inner {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px 20px;
+    }
+
+    .hero {
+        padding-top: 75px;
+    }
+
+    .intro-box {
+        padding: 25px;
+    }
+
+    .item {
+        grid-template-columns: 45px 1fr;
+        gap: 15px;
+        padding: 24px 20px;
+    }
+
+    .item h3 {
+        font-size: 19px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container nav-inner">
+        <a href="index.html" class="logo">✦ <span>PKKMB</span> 2026</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Beranda</a>
+            <a href="index.html#timeline">Timeline</a>
+            <a href="persyaratan.html">Persyaratan</a>
+            <a href="tata-tertib.html">Tata Tertib</a>
+            <a href="index.html#kelompok">Kelompok</a>
+            <a href="index.html#perlengkapan">Perlengkapan</a>
+            <a href="index.html#unjuk-bakat">Unjuk Bakat</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <span class="label">03 — PERATURAN</span>
+            <h1>Tata Tertib<br><em>PKKMB 2026</em></h1>
+            <p>Pahami seluruh tata tertib berikut agar kegiatan PKKMB 2026 berjalan tertib, aman, dan lancar.</p>
+            <a href="index.html#persyaratan" class="back-button">← Kembali ke Persyaratan &amp; Tata Tertib</a>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="intro-box">
+                <h2>Tata Tertib PKKMB 2026</h2>
+                <p>Silakan baca dan pahami seluruh informasi berikut sebelum mengikuti rangkaian kegiatan PKKMB 2026.</p>
+            </div>
+
+            <div class="list">
+                
+        <article class="item">
+            <div class="number">01</div>
+            <div>
+                <h3>Ketepatan Waktu</h3>
+                <ul><li>Peserta wajib datang tepat waktu sesuai jadwal.</li><li>Peserta wajib mengikuti proses registrasi atau presensi yang telah ditentukan.</li><li>Keterlambatan harus mengikuti arahan dan prosedur yang ditetapkan panitia.</li></ul>
+            </div>
+        </article>
+        
+
+        <article class="item">
+            <div class="number">02</div>
+            <div>
+                <h3>Kedisiplinan</h3>
+                <ul><li>Peserta wajib mematuhi seluruh peraturan PKKMB 2026.</li><li>Peserta wajib mengikuti arahan panitia selama kegiatan berlangsung.</li><li>Peserta wajib menjaga ketertiban di area kegiatan.</li></ul>
+            </div>
+        </article>
+        
+
+        <article class="item">
+            <div class="number">03</div>
+            <div>
+                <h3>Atribut dan Penampilan</h3>
+                <ul><li>Peserta wajib menggunakan atribut sesuai ketentuan.</li><li>Peserta wajib menggunakan name tag dan PIN nomor peserta.</li><li>Peserta wajib menjaga kerapian selama kegiatan berlangsung.</li></ul>
+            </div>
+        </article>
+        
+
+        <article class="item">
+            <div class="number">04</div>
+            <div>
+                <h3>Sikap dan Etika</h3>
+                <ul><li>Menjaga sopan santun terhadap panitia, dosen, tenaga kependidikan, dan sesama peserta.</li><li>Tidak melakukan tindakan yang mengganggu jalannya kegiatan.</li><li>Tidak melakukan perundungan, penghinaan, atau tindakan diskriminatif terhadap peserta lain.</li></ul>
+            </div>
+        </article>
+        
+
+        <article class="item">
+            <div class="number">05</div>
+            <div>
+                <h3>Dokumentasi</h3>
+                <ul><li>Mengikuti ketentuan foto dan video yang telah ditetapkan panitia.</li><li>Tidak mengunggah konten yang dapat merugikan atau mencemarkan nama baik institusi maupun peserta lain.</li><li>Menggunakan template dokumentasi resmi apabila diwajibkan.</li></ul>
+            </div>
+        </article>
+        
+
+        <article class="item">
+            <div class="number">06</div>
+            <div>
+                <h3>Larangan</h3>
+                <ul><li>Dilarang membawa barang yang dilarang oleh panitia atau peraturan kampus.</li><li>Dilarang membuat keributan selama kegiatan.</li><li>Dilarang meninggalkan kegiatan tanpa izin atau mengikuti prosedur yang berlaku.</li></ul>
+            </div>
+        </article>
+        
+
+        <article class="item">
+            <div class="number">07</div>
+            <div>
+                <h3>Menjaga Nama Baik Institusi</h3>
+                <ul><li>Peserta wajib menjaga nama baik kampus selama mengikuti kegiatan.</li><li>Peserta bertanggung jawab atas perilaku dan konten yang diunggah ke media sosial selama kegiatan.</li></ul>
+            </div>
+        </article>
+        
+
+        <article class="item">
+            <div class="number">08</div>
+            <div>
+                <h3>Sanksi</h3>
+                <ul><li>Pelanggaran terhadap tata tertib akan ditindak sesuai tingkat pelanggaran.</li><li>Sanksi dan mekanisme penanganan pelanggaran mengikuti ketentuan yang ditetapkan panitia PKKMB 2026.</li></ul>
+            </div>
+        </article>
+        
+            </div>
+
+            <div class="warning">
+                <strong>Perhatian</strong>
+                <p>Tata tertib dan sanksi pada halaman ini merupakan rancangan template. Silakan sesuaikan dengan keputusan final panitia PKKMB 2026 sebelum website dipublikasikan.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        PKKMB 2026 • Informasi resmi kegiatan
+    </div>
+</footer>
+
+</body>
+</html>
