@@ -131,6 +131,5 @@ if (dateButtons.length) {
 document.addEventListener("keydown", event => {
   if (event.key === "Escape") {
     closeTalentForm();
-    closePinModal();
   }
 });
